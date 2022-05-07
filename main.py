@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 
 def load_data():
     print("knn classifier 20173709")
-    print("The whole process takes about 35 seconds.")
+    print("The whole process takes about 25~35 seconds.")
+    print("lowering sample number may enhance the perfomance.")
 
     print("starting loading data...")
     #같은 디렉토리 내에 있는 csv파일을 탐색합니다.
@@ -114,6 +115,7 @@ def compute_prediction(number_test, sample_train_y, euclid_dists_matrix):
     # k 로 지정한 수를 리스트로 저장해주면, 각 k에 대해서 연산합니다.
     # 앞서서 최적의 k 에 대해서 논의했으므로, 지금은 하나의 k에 대해서만 계산합니다.
     print("starting prediction for 10 data sets...")
+    print("this process takes about 20 ~ 30 seconds...")
     k = 101
     prediction = np.empty((10, number_test))
 
